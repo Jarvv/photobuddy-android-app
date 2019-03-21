@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_more_vert"
+        android:title="Options"
+        app:elevation="12dp"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:title="@string/image_share"/>
+            <item
+                android:id="@+id/delete_image"
+                android:title="@string/image_delete"/>
+
+
+        </menu>
+
+    </item>
+
+</menu>

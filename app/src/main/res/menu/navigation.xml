@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_gallery"
+        android:icon="@drawable/ic_photo_library"
+        android:title="@string/bottom_nav_left"/>
+
+    <item
+        android:id="@+id/navigation_photo"
+        android:icon="@drawable/ic_add_a_photo_24"
+        android:title="@string/bottom_nav_middle"/>
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_map"
+        android:title="@string/bottom_nav_right"/>
+</menu>

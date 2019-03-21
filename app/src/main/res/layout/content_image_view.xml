@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:padding="@dimen/thin_margin"
+    app:behavior_peekHeight="40dp"
+    android:background="@drawable/sheet_background"
+    android:orientation="vertical"
+    android:id="@+id/bottomSheet"
+    >
+
+    <ImageView
+        android:id="@+id/bottomSheetHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_keyboard_arrow_up" />
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="@dimen/content_layout_margin">
+
+        <ImageView
+            android:id="@+id/title_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="@dimen/general_margin"
+            android:layout_marginEnd="@dimen/general_margin"
+            android:layout_gravity="bottom"
+            app:srcCompat="@drawable/ic_title"/>
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/title_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_margin"
+            android:layout_marginEnd="@dimen/general_margin"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/title_hint"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/description_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:layout_below="@id/title_layout"
+        android:layout_marginBottom="@dimen/content_layout_margin">
+
+        <ImageView
+            android:id="@+id/description_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/general_margin"
+            android:layout_marginEnd="@dimen/general_margin"
+            app:srcCompat="@drawable/ic_subtitles" />
+
+        <EditText
+            android:id="@+id/description_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/general_margin"
+            android:layout_marginEnd="@dimen/general_margin"
+            android:inputType="textMultiLine"
+            android:layout_weight="1"
+            android:maxLines="5"
+            android:ems="10"
+            android:hint="@string/description_hint"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:layout_below="@id/description_layout"
+        android:layout_marginBottom="@dimen/content_layout_margin">
+
+        <ImageView
+            android:id="@+id/date_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/general_margin"
+            android:layout_marginEnd="@dimen/general_margin"
+            app:srcCompat="@drawable/ic_date_range" />
+
+        <TextView
+            android:id="@+id/date_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/general_margin"
+            android:layout_marginEnd="@dimen/general_margin"
+            android:text="1st January 1970"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/map_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_below="@id/date_layout"
+        android:layout_marginBottom="@dimen/content_layout_margin">
+
+        <ImageView
+            android:id="@+id/map_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="@dimen/general_margin"
+            android:layout_marginEnd="@dimen/general_margin"
+            android:layout_gravity="top"
+            app:srcCompat="@drawable/ic_map"/>
+
+        <fragment
+            android:id="@+id/sheet_map"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="10"
+            android:scrollbars="vertical"
+            android:layout_marginStart="@dimen/general_margin"
+            android:layout_marginEnd="@dimen/general_margin"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/camera_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:layout_below="@id/map_layout"
+        android:layout_marginBottom="@dimen/content_layout_margin">
+
+        <ImageView
+            android:id="@+id/camera_info_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/general_margin"
+            android:layout_marginEnd="@dimen/general_margin"
+            app:srcCompat="@drawable/ic_camera_shutter" />
+
+        <TextView
+            android:id="@+id/camera_info_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/general_margin"
+            android:layout_marginEnd="@dimen/general_margin"
+            android:text=""/>
+    </LinearLayout>
+</RelativeLayout>

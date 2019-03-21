@@ -1,0 +1,74 @@
+<resources>
+    <!-- App General -->
+    <string name="app_name">PhotoBuddy</string>
+    <string name="search_hint">Search for images&#8230;</string>
+    <string name="search_activity">Search</string>
+    <string name="no_camera">Your device doesn\'t have a camera!</string>
+
+    <!-- Bottom Nav Menu-->
+    <string name="bottom_nav_left">Gallery</string>
+    <string name="bottom_nav_middle">Photo</string>
+    <string name="bottom_nav_right">Map</string>
+
+    <!-- Drawer Menu -->
+    <string name="side_help">Help</string>
+    <string name="side_splash">Introduction</string>
+    <string name="side_about">About</string>
+
+    <!-- ImageShow -->
+    <string name="image_title">Name</string>
+    <string name="image_description">Description</string>
+    <string name="image_date">Date</string>
+    <string name="image_delete">Delete</string>
+    <string name="image_share">Share</string>
+    <string name="title_hint">Add a title&#8230;</string>
+    <string name="description_hint">Add a description&#8230;</string>
+
+    <!-- Map -->
+    <string name="marker_info_title">Click to edit photo details.</string>
+    <string name="no_images">No images to show</string>
+    <string name="no_location">You are on an emulator, can\'t find your location!</string>
+
+    <!-- WelcomeSplash Slides -->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">BEGIN</string>
+
+    <string name="slide_title_1">Take Photos</string>
+    <string name="slide_description_1">Take photos directly from the app and add them to your PhotoBuddy library.</string>
+
+    <string name="slide_title_2">Edit Photos</string>
+    <string name="slide_description_2">Edit the details of your photos by giving them a title and description.</string>
+
+    <string name="slide_title_3">View On Map</string>
+    <string name="slide_description_3">View all your taken photos on the map and see where
+        you\'ve been!</string>
+
+    <!-- About -->
+    <string name="about_title">About PhotoBuddy</string>
+    <string name="about_description">To work as intended, the app needs read and write permissions
+        to allow photos taken on the app to be saved. Furthermore location settings are required to
+        attach the users location to these photos to be viewed on the map. This app was developed
+        for COM4510 by Kristofer Box and James Harvey.</string>
+
+    <!-- Help -->
+    <string name="help_title_1">Gallery</string>
+    <string name="help_description_1">Photos taken on the app will appear on the Gallery, their
+        location will also be saved which will allow them to be shown on the map within the app.
+        Tapping on these photos will bring up the image inspector. Here you can edit the title and
+        description of photos which can then be used in image searching. Be warned, any photos
+        deleted from this app will also be deleted from the file system.</string>
+    <string name="help_title_2">Map</string>
+    <string name="help_description_2">Photos taken on the app that have a location associated with
+        them will appear as red markers on the map. Tapping on these markers will bring up an
+        inspection of this photo, along with the photos title and description. Pressing the location
+        button will update your location, as shown by a blue location marker on the map.
+        Any photos that appear on the map as markers will also appear as a list of images in the
+        bottom sheet, drag this up on the bottom of the map to view the photos.</string>
+
+    <!-- Searching -->
+    <string name="recent_searches_title">Recent Searches</string>
+    <string name="no_recent_searches">You haven\'t searched for anything yet!</string>
+    <string name="search_results_title">Results for: </string>
+    <string name="no_search_results">There are no results for your search, try something else!</string>
+</resources>
